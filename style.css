@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+canvas {
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+.fade{
+  animation-name: partfade;
+  animation-duration: 3s;
+}
+
+*{
+  font-family: 'Roboto'
+}
+
+@keyframes partfade {
+  0% {opacity:0}
+  80% {opacity:100}
+}
+
+@keyframes introfade {
+  0% {opacity:0}
+  40% {opacity:100}
+  80% {opacity:0}
+}
+
+.center {
+  position:absolute;
+  align-self: center;
+  width: 99%;
+  color:white;
+}
+
+.intro{
+  position: absolute;
+  display: block;
+  z-index: 99;
+  align-self: center;
+  text-align: center;
+  top:37vh;
+  font-size:10ch;
+  animation-name: introfade;
+  animation-duration:5s;
+  color:white;
+}
+
+.intro2{
+  position: absolute;
+  display: block;
+  z-index: 99;
+  align-self: center;
+  text-align: center;
+  top:37vh;
+  font-size:10ch;
+  animation-name: partfade;
+  animation-duration:5s;
+  color:white;
+}
+
+.intro3{
+  position: absolute;
+  display: block;
+  z-index: 99;
+  align-self: center;
+  text-align: center;
+  top:37vh;
+  font-size:10ch;
+  color:white;
+}
+
+.hidden{
+  display:none;
+}
+
+.btn-container{
+  position: absolute;
+  align-self:center;
+  z-index: 99;
+  text-align:center;
+  width:82%;
+  top:65vh;
+  height:30%;
+  align-items:center;
+}
+
+.shown{
+  display:block;
+}
+
+#btn-start{
+  position: absolute;
+  align-self:center;
+  width:20%;
+  color:white;
+  font-size:5vh;
+  margin-top:1%;
+  text-decoration: none !important;
+}
+
+#btn-start:hover{
+  color:gray;
+  text-decoration: none !important;
+}
+
+#divhr{
+  width:15%;
+    margin-left:79vh;
+  align-self:center;
+}
+
+#divhr2{
+  width:15%;
+  margin-left:79vh;
+  align-self:center;
+  margin-top:10vh;
+}
+
+@keyframes extend{
+  0%{
+    width:5%;
+    margin-left:86vh;
+  }
+  100%{
+    width:15%;
+    margin-left:79vh;
+  }
+}
+
+.side{
+  animation-name:side;
+  animation-duration:3s;
+  animation-iteration-count: infinite;
+}
+
+.side2{
+  animation-name: sideright;
+  animation-duration:3s;
+  animation-iteration-count: infinite
+}
+
+@keyframes side{
+  0%{
+    margin-left:5vh;
+  }
+  50%{
+    margin-left:8vh;
+  }
+  100%{
+    margin-left:5vh;
+  }
+}
+
+@keyframes sideright{
+  0%{
+    margin-left:110vh;
+  }
+  50%{
+    margin-left:108vh;
+  }
+  100%{
+    margin-left:110vh;
+  }
+}
+
+#a{
+  display:none;
+}
+
+.anim{
+  animation-name:extend;
+  animation-duration:3s;
+}
+
+.e{
+  background-color:seagreen;
+
+}
