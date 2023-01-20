@@ -9,19 +9,57 @@
 </head>
 
 <body>
-  <div id="center">
-    <h1 id="mainText" class="intro center">Hey</h1>
-    
-    <div class="btn-container" id="a">
-      <hr id="divhr" class="anim">
-        <a href="body.html" class="btn" id="btn-start">Start</a>
-      <hr id="divhr2" class="anim">
-    </div>
+  <video
+    id = "video"
+    playsinline
+    webkit-playsinline
+    loop
+    autoplay
+    width="4952"
+    height="3048"
+    src = "./assets/synthwp.mp4"
+    style="display:none"
+    muted = "muted"
+  >
+  </video>
 
-  </div>
   <canvas id="bg"></canvas>
-  <script type="module" src="/main.js"></script>
-  <script type="module" src="/animations.js"></script>
+    <div class="container">
+  </div>
+
+  <h1 id="welc" class="intro2 center fade"> </h1>
+  <h1 id="welc2" class="intro2 center fade" style="font-size:5vh; margin-top:20vh;"> </h1>
+
+  <div class="e">
+    <h1 class="intro2 side e" style="top:95.3vh; margin-left:10vh; width:40vh; padding:5vh">About Me</h1>
+    <p class="center e side" style="top: 130vh; margin-left:10vh; width:40vh; height:40vh; font-size:3vh; padding:5vh">
+      Hey. My name's Ritvik, and I like to code. I enjoy coding front-end and backend, and I love to try new things. I'm still very inexperienced and still learning though. Aside from web development, I am proficient in java, python, and react native. I'm currently in high school and coding for me has been a past time hobby.
+    </p>
+  </div>
+
+  <div class="e">
+    <h1 class="intro2 side2 e" style="top:245.3vh; margin-left:90vh; width:40vh; padding:5vh">My Hobbies</h1>
+    <p class="center e side2" style="top:280vh; margin-left:90vh; width:40vh; height:40vh; font-size:3vh; padding:5vh">
+      Well, as the arcade game suggests, I like to play video games, and, as mentioned before, I like to code. When you put thesee two together, you get coding games. I have tried this in Unity, but can't say that I'm too good at it. Aside from coding and playing video games, I play the violin.
+    </p>
+  </div>
+
+  <div class="e">
+    <h1 class="intro2 side2 e" style="top:375.3vh; margin-left:90vh; width:40vh; padding:5vh">My Work</h1>
+    <p class="center e side2" style="top:400vh; margin-left:90vh; width:40vh; height:40vh; font-size:3vh; padding:5vh">
+      Most of my works have been submitted to hackathons. Some include, Manage.Co, a mobile app for managing your company, and MentorThis, a website for students to get feedback on their projects. Check out my github (f8-rp) for more.
+    </p>
+  </div>
+
+  <div class="e">
+    <h1 class="intro2 side e" style="top:530vh; margin-left:10vh; width:40vh; padding:5vh">Side Note</h1>
+    <p class="center e side" style="top:565vh; margin-left:10vh; width:40vh; height:20vh; font-size:3vh; padding:5vh">
+      Side Note: This website is still under construction and will get front-end improvements over time!
+    </p>
+  </div>
+
+  <script type="module" src="/body.js"></script>
+  <script type="module" src="/bodyanim.js"></script>
 </body>
 
 </html>
